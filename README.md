@@ -65,4 +65,4 @@ app.controller('ChildController', function ($scope) {
     $scope.person.greeted = true; // FIXED: set the greeted flag to true when you greet the person.
   }
 });
-'''
+```
