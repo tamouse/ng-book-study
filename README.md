@@ -2,6 +2,20 @@
 
 Angular book: ng-book: The Complete Book on Angular.JS: <https://www.ng-book.com/>
 
+## Showing the exercises
+
+Most of these should run in a self-contained web server. The following simple one-liner should work
+when run from the home source directory:
+
+    $ ruby -run -e httpd . --port 8888
+
+Then you can launch a browser at <http://localhost:8888/> to see the web index of the examples.
+Click into one of the example directories where an `index.html` file resides.
+
+## Template
+
+There is a `_template` directory that helps create new exercises containing a bare `index.html` file that imports angular and twitter bootstrap, and the `app.js` file where the angular code lives.
+
 ## Best Practices:
 
 ### Binding:
