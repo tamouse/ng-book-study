@@ -20,7 +20,9 @@ There is a `_template` directory that helps create new exercises containing a ba
 
 ### Binding:
 
-> “Due to the nature of JavaScript itself and how it passes by value vs. reference, it’s considered a best-practice in Angular to bind references in the views by an attribute on an object, rather than the raw object itself.” -- page 40.
+> “Due to the nature of JavaScript itself and how it passes by value vs. reference, it’s considered a best-practice in Angular to bind references in the views by an attribute on an object, rather than the raw object itself.” 
+
+-- page 40.
 
 
 ### Modules / Namespacing
@@ -46,3 +48,21 @@ There is a `_template` directory that helps create new exercises containing a ba
 
 > It’s good practice to keep slim controllers. One way that we as AngularJS developers can do so is by using the dependency injection feature of AngularJS to access services. We’ll discuss services in-depth in the services chapter.”
 
+-- page 64
+
+*****
+
+## Errata
+
+### Page 68 Example
+
+There's a slight bug in the `ChildController`'s `sayHello` method: it should set `$scope.person.greeted` to `true`:
+
+```javascript
+app.controller('ChildController', function ($scope) {
+  $scope.sayHello = function () {
+    $scope.person.name = 'Air Jordan';
+    $scope.person.greeted = true; // FIXED: set the greeted flag to true when you greet the person.
+  }
+});
+'''
